@@ -48,27 +48,27 @@ details p,details li{font-size:15px;color:var(--sub)}
 
 <div class="card step"><div class="num">2</div><div style="flex:1">
   <b>ワイヤレスデバッグをオンにする</b>
-  <p>開発者向けオプションを開き、下の方にある「ワイヤレスデバッグ」の<strong>右側のスイッチ</strong>をオンにします。「このネットワークでワイヤレスデバッグを許可しますか?」と出たら「許可」を押します。</p>
-  <a class="btn" href="intent:#Intent;action=android.settings.APPLICATION_DEVELOPMENT_SETTINGS;end">開発者向けオプションを開く</a>
+  <p>画面の上から<strong>2回</strong>引き下ろすと、クイック設定の<strong>一番左上</strong>に「ワイヤレス デバッグ」のタイルがあります。タップして ON にします。</p>
+  <p>「このネットワークでワイヤレスデバッグを許可しますか?」と出たら「許可」を押します。</p>
 </div></div>
 
 <div class="card step"><div class="num">3</div><div style="flex:1">
   <b>Shizuku で「開始」を押す</b>
   <p>Shizuku アプリの「ワイヤレスデバッグで開始」の欄にある<strong>「開始」</strong>を押します。黒い画面に文字が流れて、最後に戻ります。</p>
   <p>上に「<span class="ok">Shizuku は実行中</span>」と出れば成功です。</p>
-  <a class="btn" href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=moe.shizuku.privileged.api;end">Shizuku を開く</a>
+  <p>Shizuku のアイコンは、このガイドと同じホーム画面にあります。</p>
 </div></div>
 
 <div class="card step"><div class="num">4</div><div style="flex:1">
   <b>Termux を一度開く</b>
   <p>開くだけで SSH(むぎが入る入口)が自動で立ち上がります。開いたら閉じてかまいません。</p>
-  <a class="btn" href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.termux;end">Termux を開く</a>
+  <p>Termux のアイコンも、このガイドと同じホーム画面にあります。</p>
 </div></div>
 
 <div class="card step"><div class="num">✓</div><div style="flex:1">
   <b>Tailscale がオンか確認</b>
   <p>普段はオンのままなので、通知に鍵マークがあれば大丈夫です。オフなら開いてオンにします。</p>
-  <a class="btn" href="intent:#Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;package=com.tailscale.ipn;end">Tailscale を開く</a>
+
 </div></div>
 
 <h2>困ったとき</h2>
@@ -76,6 +76,7 @@ details p,details li{font-size:15px;color:var(--sub)}
 <details><summary>「開始」を押しても失敗する</summary>
 <ul>
   <li>Wi-Fi が切れていると、ワイヤレスデバッグは自動でオフに戻ります。手順 1 と 2 をやり直してください。</li>
+  <li>クイック設定のタイルが「使用不可」になっているときは、設定 → システム → 開発者向けオプション → 「クイック設定開発者用タイル」→「ワイヤレス デバッグ」をオンにします。</li>
   <li>それでもだめなら、ペアリングが外れています。下の「ペアリングをやり直す」をやってください。</li>
 </ul></details>
 
